@@ -21,11 +21,12 @@
   
   .client__item {
     margin-right: 30px;
+    &:last-child {
+      margin-right: 0px;
+    }
   }
   
-  .client__item:last-child {
-    margin-right: 0px;
-  }
+  
   
   .client__link {
     display: flex;
@@ -37,12 +38,14 @@
     border-radius: 4px;
     transition: border var(--timeing-funktion), color var(--timeing-funktion);
     color: #afb1b8;
-  }
-  .client__link:hover,
-  .client__link:focus {
+
+    &:hover,
+  &:focus {
     border: 1px solid var(--buttom-colour);
     color: var(--buttom-colour);
   }
+  }
+  
   
   .client__icon {
     fill: currentColor;

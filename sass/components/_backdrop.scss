@@ -48,12 +48,14 @@
   .close-button__icon {
     fill: #000000;
     transition: fill var(--timeing-funktion);
+
+    .close-button:hover &,
+    .close-button:focus & {
+      fill: var(--accent-colour);
+    }
   }
   
-  .close-button:hover .close-button__icon,
-  .close-button:focus .close-button__icon {
-    fill: var(--accent-colour);
-  }
+ 
   
   .form__title {
     margin-bottom: 12px;
@@ -92,8 +94,8 @@
     color: var(--secondary-text-colour);
   }
   
-  .form__picture:focus-within .form-input {
-    border: 1px solid var(--accent-colour);
+  .form__picture:focus-within .form__input {
+    border: 4px solid var(--accent-colour);
   }
   .form__picture:focus-within .form__svg {
     fill: var(--accent-colour);
@@ -142,6 +144,13 @@
     background-position: 50% 50%;
     box-shadow: 0 0 0 0.1em var(--title-colour);
     transition: background-color var(--timeing-funktion), box-shadow var(--timeing-funktion);
+
+    .checkbox:checked + & {
+      background-image: url(/photo/icon-check-white.svg);
+      background-origin: border-box;
+      box-shadow: 0 0 0 0.1em var(--buttom-colour);
+      background-color: var(--buttom-colour);
+    }
   }
   
   .checkbox {
@@ -166,12 +175,7 @@
     letter-spacing: 0.03em;
     color: var(--buttom-colour);
   }
-  .checkbox:checked + .checkbox__area {
-    background-image: url(/photo/icon-check-white.svg);
-    background-origin: border-box;
-    box-shadow: 0 0 0 0.1em var(--buttom-colour);
-    background-color: var(--buttom-colour);
-  }
+  
   .form-checkbox label {
     margin-left: 7px;
     font-size: 14px;

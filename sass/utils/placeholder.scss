@@ -69,8 +69,8 @@
     text-decoration: none;
     font-family: 'Roboto';
     font-style: normal;
+    &:focus {
+      font-variant: var(--accent-colour);
+    }
   }
   
-  .link:focus {
-    font-variant: var(--accent-colour);
-  }

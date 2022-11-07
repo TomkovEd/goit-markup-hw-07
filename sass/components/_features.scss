@@ -1,15 +1,4 @@
-.visually--hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: 0px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
+
   .features {
     display: flex;
   }
@@ -17,10 +6,12 @@
   .features__item {
     margin-right: 30px;
     width: 270px;
+
+    &:last-child {
+      margin: 0px;
+    }
   }
-  .features__item:last-child {
-    margin: 0px;
-  }
+  
   
   .features__image {
     margin-bottom: 30px;

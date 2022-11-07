@@ -68,9 +68,10 @@
     justify-content: center;
     fill: #afb1b8;
     transition: fill var(--timeing-funktion), background-color var(--timeing-funktion);
-  }
-  .sn__link:hover,
-  .sn__link:focus {
-    fill: #ffffff;
-    background-color: var(--accent-colour);
+
+    &:hover,
+    &:focus {
+      fill: #ffffff;
+      background-color: var(--accent-colour);
+    }
   }
