@@ -1,3 +1,11 @@
-body {
-  background-color: green;
-}
+@import'./utils/reset.scss';
+
+@import'./components/header';
+@import'./components/hero';
+@import'./components/features';
+@import './components/task';
+@import'./components/team';
+@import'./components/clients';
+@import'./components/footer';
+@import'./components/portfolio';
+@import'./components/backdrop';
