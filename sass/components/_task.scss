@@ -21,10 +21,12 @@
     height: 294px;
     left: 215px;
     top: 1058px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
   }
-  .task__image:last-child {
-    margin-right: 0px;
-  }
+  
   
   .task__thumb {
     position: relative;
